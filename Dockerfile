@@ -1,5 +1,5 @@
 # Basis-Image des Containers erstellen
-FROM python:3.12.9
+FROM python:3.12.4
 
 # Set up directory
 RUN mkdir /application 
