@@ -35,4 +35,5 @@ def auswertung():
     return render_template('auswertung.html', notfaelle=notfaelle)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, port=8001)
+    
