@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Notfall Auswertung</title>
+  </head>
+  <body>
+    <h1>Notfall Auswertung</h1>
+    <table border="1">
+      <tr>
+        <th>Name des Meldenden</th>
+        <th>Datum</th>
+        <th>Baustelle</th>
+        <th>Name des Verletzten</th>
+        <th>Art des Notfalls</th>
+        <th>Verletztes Körperteil</th>
+        <th>Beschreibung</th>
+      </tr>
+      {% for notfall in notfaelle %}
+      <tr>
+        <td>{{ notfall[0] }}</td>
+        <td>{{ notfall[1] }}</td>
+        <td>{{ notfall[2] }}</td>
+        <td>{{ notfall[3] }}</td>
+        <td>{{ notfall[4] }}</td>
+        <td>{{ notfall[5] }}</td>
+        <td>{{ notfall[6] }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </body>
+</html>

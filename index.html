@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Notfall Meldung</title>
+  </head>
+  <body>
+    <h1>Notfall Meldung</h1>
+    <form method="post" action="/">
+      <label for="name">Name des Meldenden:</label><br>
+      <input type="text" id="name" name="name"><br>
+      
+      <label for="datum">Datum:</label><br>
+      <input type="date" id="datum" name="datum"><br>
+      
+      <label for="baustelle">Baustelle / Adresse:</label><br>
+      <input type="text" id="baustelle" name="baustelle"><br>
+      
+      <label for="verletzter">Name des Verletzten:</label><br>
+      <input type="text" id="verletzter" name="verletzter"><br>
+      
+      <label for="notfall_art">Art des Notfalls:</label><br>
+      <select id="notfall_art" name="notfall_art">
+        <option value="Sturz">Sturz</option>
+        <option value="Schnittverletzung">Schnittverletzung</option>
+        <option value="Verbrennung">Verbrennung</option>
+        <option value="Sonstiges">Sonstiges</option>
+      </select><br>
+      
+      <label for="verletztes_koerperteil">Verletztes Körperteil:</label><br>
+      <select id="verletztes_koerperteil" name="verletztes_koerperteil">
+        <option value="Arm">Arm</option>
+        <option value="Bein">Bein</option>
+        <option value="Kopf">Kopf</option>
+        <option value="Sonstiges">Sonstiges</option>
+      </select><br>
+      
+      <label for="beschreibung">Beschreibung des Notfalls:</label><br>
+      <textarea id="beschreibung" name="beschreibung"></textarea><br>
+      
+      <input type="submit" value="Melden">
+    </form>
+  </body>
+</html>
