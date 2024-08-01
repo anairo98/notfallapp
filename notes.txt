@@ -1,0 +1,3 @@
+Auf Applikation lokal zugreifen  (Nachdem Applikation gestartet worden ist): 
+http://localhost:5000
+
